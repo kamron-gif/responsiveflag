@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.w-25 {
+  width: 23%;
+}
+
+body {
+  background: #202c36;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #2b3844;
+  color: white;
+}
+
+header button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+.search {
+  width: 480px;
+  height: 56px;
+  color: white;
+  margin-top: 20px;
+  background: #2b3844;
+  gap: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.search input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 90%;
+}
+
+section {
+  padding: 50px;
+}
+
+.card {
+  width: 264px;
+  height: 250px;
+  border-radius: 5px;
+  text-align: center;
+  background: #2b3844;
+  color: white;
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+::placeholder {
+  color: white;
+}
+
+@media (min-width: 577px) and (max-width: 834px) {
+  height h1 {
+    font-size: 10px;
+  }
+  .search {
+    width: 100%;
+  }
+  .w-25 {
+    width: 45%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 576px) {
+  height h1 {
+    font-size: 14px;
+  }
+  .search {
+    width: 100%;
+  }
+  .w-25 {
+    width: 100%;
+  }
+}
